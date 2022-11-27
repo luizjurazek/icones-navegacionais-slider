@@ -1,15 +1,13 @@
 var swiper = new Swiper(".slide-container", {
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 20,
-  sliderPerGroup: 4,
-  loop: true,
+  loop: false,
   centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
+  cssMode: "True",
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    dynamicBullets: true,
+    dynamicBullets: false,
   },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -18,10 +16,10 @@ var swiper = new Swiper(".slide-container", {
 
   breakpoints: {
     0: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     520: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     768: {
       slidesPerView: 3,
